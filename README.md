@@ -1,7 +1,19 @@
-# State-of-the-art in reversible logic synthesis
+# **COST Action IC1405:** Reversible Computation - Extending Horizons of Computing
+# State of the Art Report Working Group 3: Reversible logic synthesis
+
+Mathias Soeken, Integrated Systems Laboratory, EPFL, Switzerland (Editor)
+
+#### Contributors
+* Nabila Abdessaied, University of Bremen, Germany
+* Pawel Kerntopf, University of Lodz, Poland
+* Claudio Moraga, Technical University of Dortmund, Germany
+* Krzysztof Podlaski, University of Lodz, Poland
+* Mathias Soeken, Integrated Systems Laboratory, EPFL, Switzerland
+* Robert Wille, Department for Integrated Circuit and System Design, Johannes Kepler University Linz, Austria
 
 #### Table of Contents
 
+- [Preface](#preface)
 - [Overview](#overview)
 - [Function representations](#function-representations)
 	- [Representations for irreversible functions](#representations-for-irreversible-functions)
@@ -27,6 +39,14 @@
 		- [ESOP-based synthesis](#esop-based-synthesis)
 		- [Hierarchical synthesis](#hierarchical-synthesis)
 		- [Building block synthesis](#building-block-synthesis)
+
+## Preface
+
+This report presents the state of the art within reversible logic synthesis. The work was initiated by Working Group 3 of the COST Action IC 1405 on reversible computations. The contents have been provided by leading experts of the different research fields that are covered.
+
+More on the project:
+* [Description on EU COST webpage](http://www.cost.eu/COST_Actions/ict/IC1405)
+* [Project webpage](http://www.revcomp.eu/)
 
 ## Overview
 
