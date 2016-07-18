@@ -39,6 +39,7 @@ Mathias Soeken, Integrated Systems Laboratory, EPFL, Switzerland (Editor)
 		- [ESOP-based synthesis](#esop-based-synthesis)
 		- [Hierarchical synthesis](#hierarchical-synthesis)
 		- [Building block synthesis](#building-block-synthesis)
+- [References](#references)
 
 ## Preface
 
@@ -334,8 +335,7 @@ In hierarchical synthesis the function is represented in a structural way, e.g.,
 
   This paper first introduced the ideas of hierarchical synthesis based on binary decision diagrams.  Several node configurations are considered (e.g., nodes having constant inputs, nodes having complemented edges, and nodes that are shared to multiple parents).  For each configuation the optimum circuit realization is precomputed using SAT-based synthesis techniques.
 
-* [A. Chattopadhyay, A. Littarru, L.G. Amarù, P.-E. Gaillardon, and G. De Micheli:
-Reversible logic synthesis via biconditional binary decision diagrams, in: *ISMVL* **45**, 2015, 2-7.](http://dx.doi.org/10.1109/ISMVL.2015.21)
+* [A. Chattopadhyay, A. Littarru, L.G. Amarù, P.-E. Gaillardon, and G. De Micheli: Reversible logic synthesis via biconditional binary decision diagrams, in: *ISMVL* **45**, 2015, 2-7.](http://dx.doi.org/10.1109/ISMVL.2015.21)
 
   This paper considers *Biconditional Binary Decision Diagrams* (BBDDs) instead of BDDs as structural representation for the input function.
 
@@ -343,13 +343,11 @@ Reversible logic synthesis via biconditional binary decision diagrams, in: *ISMV
 
   Instead of precomputing optimum circuits for each BDD node, this paper suggests to precompute optimum circuits for certain selected subgraphs in the BDD.  These subgraphs are determined in the input BDD using subgraph isomorphism.
 
-* [M. Soeken, R. Wille, and R. Drechsler:
-Hierarchical synthesis of reversible circuits using positive and negative Davio decomposition, in: *IDT* **5**, 2010, 143-148.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5724427)
+* [M. Soeken, R. Wille, and R. Drechsler: Hierarchical synthesis of reversible circuits using positive and negative Davio decomposition, in: *IDT* **5**, 2010, 143-148.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5724427)
 
   This paper considers *Kronecker-functional Decision Diagrams* (KFDDs) instead of BDDs as structural representation for the input function.  It found that in particular the positive Davio decomposition is advantageous for reversible circuits.
 
-* [S. Stojkovic, M. Stankovic, and C. Moraga: Complexity reduction of Toffoli networks based on FDD,
-in: *Facta Universitatis, Series E.E.* **28**, 2015, 251-262.](http://www.doiserbia.nb.rs/img/doi/0353-3670/2015/0353-36701502251S.pdf)
+* [S. Stojkovic, M. Stankovic, and C. Moraga: Complexity reduction of Toffoli networks based on FDD, in: *Facta Universitatis, Series E.E.* **28**, 2015, 251-262.](http://www.doiserbia.nb.rs/img/doi/0353-3670/2015/0353-36701502251S.pdf)
 
   The paper introduces design of reversible circuits based on *Functional Decision Diagrams*. It is shown that realizations with lower quantum cost or less ancilla lines are obtained as compared with other DD-based methods.
 
@@ -376,3 +374,43 @@ Building block synthesis relies on existing realizations of frequently used func
 * [R. Wille, E. Schönborn, M. Soeken, and R. Drechsler: SyReC: A hardware description language for the specification and synthesis of reversible circuits, in: *Integration* **53**, 2016, 39-53.](http://dx.doi.org/10.1016/j.vlsi.2015.10.001)
 
   This paper presents the findings proposed before in a more comprehensive fashion, including a grammar of the proposed SyReC language as well as detailed description of the synthesis for the data and control flow.
+
+## References
+* [A. Chattopadhyay, A. Littarru, L.G. Amarù, P.-E. Gaillardon, and G. De Micheli: Reversible logic synthesis via biconditional binary decision diagrams, in: *ISMVL* **45**, 2015, 2-7.](http://dx.doi.org/10.1109/ISMVL.2015.21)
+* [A. De Vos and Y. Van Rentergem: Young subgroups for reversible computers, in: *Adv. in Math. of Comm.* **2**, 2008, 183-200.](http://dx.doi.org/10.3934/amc.2008.2.183)
+* [O. Golubitsky, S.M. Falconer, and D. Maslov: Synthesis of the optimal 4-bit reversible circuits, in DAC 47, 2010, 653-656.]()
+* [O. Golubitsky and D. Maslov: A study of optimal 4-Bit reversible Toffoli circuits and their synthesis, in: *IEEE Trans. Computers* **61**, 2012, 1341-1353.](http://dx.doi.org/10.1109/TC.2011.144)
+* [D. Große, R. Wille, G.W. Dueck, and R. Drechsler: Exact multiple-control Toffoli network synthesis with SAT techniques, in: *IEEE Trans. on CAD* **28**, 2009, 703&ndash;715.](http://dx.doi.org/10.1109/TCAD.2009.2017215)
+* [F.Z. Hadjam and C. Moraga: RIMEP2: Evolutionary design of reversible digital circuits, in *JETC* **11**, 2014, 27:1-27:23.](http://dl.acm.org/citation.cfm?doid=2629534)
+* [J. Jegier, P. Kerntopf, and M. Szyprowski: An approach to constructing reversible multi-qubit benchmarks with provably minimal implementations, in: *IEEE-NANO* **13**, 2013, 99-104.]()
+* [J. Jegier and P. Kerntopf: Progress towards constructing sequences of benchmarks for quantum Boolean circuits synthesis, in: *IEEE-NANO* **14**, 2014, 250-255.]()
+* [J. Jegier and P. Kerntopf: Gate count minimal reversible circuits for two infinite sequences of self-inverse functions, in: *IWBP* **11**, 2014, 115-122.]()
+* [J. Jegier and P. Kerntopf: Gate count minimal reversible circuits, in: *Problems and New Solutions in the Boolean Domain*, Bernd Steinbach (ed.), Cambridge Scholars Publishing, 2016, 342-355.]()
+* [P. Kerntopf: A new heuristic algorithm for reversible logic synthesis, in: *DAC* **41**, 2004, 834-837.](http://dl.acm.org/citation.cfm?id=996789)
+* [M. Krishna and A. Chattopadhyay: Efficient reversible logic synthesis via isomorphic subgraph matching, in: *ISMVL* **44**, 2014, 103-108.](http://dx.doi.org/10.1109/ISMVL.2014.26)
+* [P. Manna, D.K. Kole, H. Rahaman, D.K. Das, and B.B. Bhattacharya: Reversible logic circuit synthesis using genetic algorithm and particle swarm optimization, in: *ISED* **3**, 2012, 246-250.](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6526593&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6526593)
+* [D. Maslov, G.W. Dueck, and D.M. Miller: Toffoli network synthesis with templates, in: *IEEE Trans. on CAD of Integrated Circuits and Systems* **24**, 2005, 807-817.](http://dx.doi.org/10.1109/TCAD.2005.847911)
+* [D. Maslov, G.W. Dueck, and D.M. Miller: Synthesis of Fredkin-Toffoli reversible networks, in: *IEEE Trans. VLSI Syst.* **13**, 2005, 765-769.](http://dx.doi.org/10.1109/TVLSI.2005.844284)
+* [D.M. Miller, D. Maslov, and G.W. Dueck: A transformation based algorithm for reversible logic synthesis, in: *DAC* **40**, 2003, 318-323.](http://dl.acm.org/citation.cfm?doid=775832.775915)
+* [A.K. Prasad, V.V. Shende, K.N. Patel, I.L. Markov, and J.P. Hayes: Data structures and algorithms for simplifying reversible circuits, in: *ACM JTEC* **2**, 2006, 277-293.](http://dl.acm.org/citation.cfm?id=1216399)
+* [Z. Li, H. Chen, X. Song, and M. Perkowski: A synthesis algorithm for 4-bit reversible logic circuits with minimum quantum cost, in: *JETC* **11**, 2014, 29:1-29:19.]()
+* [A.C. Ribeiro, L.A.B. Kowada, F.L. Marquezino, and C.M.H. Figueiredo: A new reversible circuit synthesis algorithm based on cycle representations of permutations, in: *Electronic Notes in Discrete Mathematics* **50**, 2015, 187-192.](http://dx.doi.org/10.1016/j.endm.2015.07.032)
+* [M. Saeedi, M. Saheb Zamani, M. Sedighi, and Z. Sasanian: Synthesis of reversible circuit using cycle-based approach, in: *J. Emerg. Technol. Comput. Syst.* **6**, 2010, 13:1–13:26.](http://dx.doi.org/10.1145/1877745.1877747)
+* [V.V. Shende, A.K. Prasad, I.L. Markov, and J.P. Hayes: Synthesis of reversible logic circuits, in: *IEEE Trans. Comput. Aid. Des.* **22**, 2003, 710–722.](http://dx.doi.org/10.1109/TCAD.2003.811448)
+* [M. Soeken and A. Chattopadhyay: Fredkin-enabled transformation-based reversible logic synthesis, in: *ISMVL* **46**, 2015, 60-65.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7238133)
+* [M. Soeken and A. Chattopadhyay: Unlocking efficiency and scalability of reversible logic synthesis using conventional logic synthesis, in: *DAC* **53**, 2016.](http://msoeken.github.io/papers/2016_dac_2.pdf)
+* [M. Soeken, G.W. Dueck, and D.M. Miller: A fast symbolic transformation based algorithm for reversible logic synthesis, in: *RC* **8**, 2016.](http://msoeken.github.io/papers/2016_rc_1.pdf)
+* [M. Soeken, L. Tague, G.W. Dueck, and R. Drechsler: Ancilla-free synthesis of large reversible functions using binary decision diagrams, in: *J. Symb. Comput.* **73**, 2016, 1-26.](http://dx.doi.org/10.1016/j.jsc.2015.03.002)
+* [M. Soeken, R. Wille, and R. Drechsler: Hierarchical synthesis of reversible circuits using positive and negative Davio decomposition, in: *IDT* **5**, 2010, 143-148.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5724427)
+* [M. Soeken, R. Wille, C. Hilken, N. Przigoda, and R. Drechsler: Synthesis of reversible circuits with minimal lines for large functions, in: *ASP-DAC* **17**, 2012, 85-92.](http://dx.doi.org/10.1109/ASPDAC.2012.6165069)
+* [S. Stojkovic, M. Stankovic, and C. Moraga: Complexity reduction of Toffoli networks based on FDD, in: *Facta Universitatis, Series E.E.* **28**, 2015, 251-262.](http://www.doiserbia.nb.rs/img/doi/0353-3670/2015/0353-36701502251S.pdf)
+* [M. Szyprowski and P. Kerntopf: Reducing quantum cost in reversible Toffoli circuits, in: *RM* **9**, 2011, 127-136.]()
+* [M. Szyprowski and P. Kerntopf: An approach to quantum cost optimization in reversible circuits, in: *IEEE-NANO*, **11**, 2011, 1521-1526.]()
+* [M. Szyprowski and P. Kerntopf: Optimal 4-bit reversible mixed-polarity Toffoli circuits, in *RC* **4**, 2012, 138-151.](http://dx.doi.org/10.1007/978-3-642-36315-3_11)
+* [X. Wang, L. Jiao, Y. Li, Y. Qi, and Jianshe Wu: A variable-length chromosome evolutionary algorithm for reversible circuit synthesis, in: *Multiple-Valued Logic and Soft Computing* **25**, 2015, 643-671.](http://www.oldcitypublishing.com/journals/mvlsc-home/mvlsc-issue-contents/mvlsc-volume-25-number-6-2015/mvlsc-25-6-p-643-671/)
+* [R. Wille and R. Drechsler: BDD-based synthesis of reversible logic for large functions, in: *DAC* **46**, 2009, 270-275.](http://doi.acm.org/10.1145/1629911.1629984)
+* [R. Wille, H.M. Le, G.W. Dueck, and D. Große: Quantified synthesis of reversible logic, in: *DATE*, 2008, 1015-1020.](http://dx.doi.org/10.1109/DATE.2008.4484814)
+* [R. Wille, S. Offermann, and R. Drechsler: SyReC: A programming language for synthesis of reversible circuits, in: *FDL* **13**, 2010, 184-189.](http://www.informatik.uni-bremen.de/agra/doc/konf/10_syrec_reversible_hardware_language.pdf)
+* [R. Wille, E. Schönborn, M. Soeken, and R. Drechsler: SyReC: A hardware description language for the specification and synthesis of reversible circuits, in: *Integration* **53**, 2016, 39-53.](http://dx.doi.org/10.1016/j.vlsi.2015.10.001)
+* [R. Wille, M. Soeken, N. Przigoda, and R. Drechsler: Effect of negative control lines on the exact synthesis of reversible circuits, in: *Multiple-valued Logic and Soft Computing* **21**, 2013, 627-640.](http://www.oldcitypublishing.com/MVLSC/MVLSCabstracts/MVLSC21.5-6abstracts/MVLSCv21n5-6p627-640Wille.html)
+* [R. Wille, M. Soeken, E. Schönborn, and R. Drechsler: Circuit line minimization in the HDL-based synthesis of reversible logic, in *ISVLSI*, 2012, 213-218.](http://dx.doi.org/10.1109/ISVLSI.2012.43)
