@@ -1,3 +1,6 @@
+![COST logo](http://www.informatik.uni-bremen.de/ictcost/images/slogan.png)
+![Action logo](http://www.informatik.uni-bremen.de/ictcost/images/logo.png)
+
 # **COST Action IC1405:** Reversible Computation - Extending Horizons of Computing
 # State of the Art Report Working Group 3: Reversible logic synthesis
 
