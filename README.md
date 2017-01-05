@@ -162,7 +162,7 @@ Due to the use of a precomputed database of all gate-optimal 4-input reversible 
 **Gate libraries:** MCT, MPMCT
 
 **References:**
-* [A.K. Prasad, V.V. Shende, K.N. Patel, I.L. Markov, and J.P. Hayes: Data structures and algorithms for simplifying reversible circuits, in: *ACM JTEC* **2**, 2006, 277-293.](http://dl.acm.org/citation.cfm?id=1216399)
+* [A.K. Prasad, V.V. Shende, K.N. Patel, I.L. Markov, and J.P. Hayes: Data structures and algorithms for simplifying reversible circuits, in: *ACM JETC* **2**, 2006, 277-293.](http://dl.acm.org/citation.cfm?id=1216399)
 
   This paper presents an algorithm that generates a library of optimal realizations for small NCT reversible circuits. This library is used afterwards to synthesize optimal circuits for all 3-bit reversible functions, and millions of 4-bit circuits.
 
@@ -283,7 +283,7 @@ Synthesis in these category synthesize a circuit based on a metaheuristic such a
 
   This paper gives a detailed description of a method to design reversible circuits using genetic programming. The method does not require a supporting database of circuits: circuits are evolved from scratch.  Reported circuits are among the best in the prevailing literature.
 
-* [X. Wang, L. Jiao, Y. Li, Y. Qi, and Jianshe Wu: A variable-length chromosome evolutionary algorithm for reversible circuit synthesis, in: *Multiple-Valued Logic and Soft Computing* **25**, 2015, 643-671.](http://www.oldcitypublishing.com/journals/mvlsc-home/mvlsc-issue-contents/mvlsc-volume-25-number-6-2015/mvlsc-25-6-p-643-671/)
+* [X. Wang, L. Jiao, Y. Li, Y. Qi, and J. Wu: A variable-length chromosome evolutionary algorithm for reversible circuit synthesis, in: *Multiple-Valued Logic and Soft Computing* **25**, 2015, 643-671.](http://www.oldcitypublishing.com/journals/mvlsc-home/mvlsc-issue-contents/mvlsc-volume-25-number-6-2015/mvlsc-25-6-p-643-671/)
 
   This paper introduces a variation of a genetic algorithm, where the length of the chromosomes is adaptive. The method also uses a database as in Golubitsky-Maslov *IEEE Tr. Comp.* **61** (see enumerative synthesis). Reported circuits are among the best in the prevailing literature.
 
