@@ -353,6 +353,10 @@ In hierarchical synthesis the function is represented in a structural way, e.g.,
 * [S. Stojkovic, M. Stankovic, and C. Moraga: Complexity reduction of Toffoli networks based on FDD, in: *Facta Universitatis, Series E.E.* **28**, 2015, 251-262.](http://www.doiserbia.nb.rs/img/doi/0353-3670/2015/0353-36701502251S.pdf)
 
   The paper introduces design of reversible circuits based on *Functional Decision Diagrams*. It is shown that realizations with lower quantum cost or less ancilla lines are obtained as compared with other DD-based methods.
+  
+* [M. Rawski: Application of functional decomposition in synthesis of reversible circuits, in: *RC* **7**, 2015.](http://dx.doi.org/10.1007/978-3-319-20860-2_20)
+
+  This paper applies functional decomposition to an input design, dividing it into smaller parts.  These can be synthesized using reversible synthesis algorithms, and then merged together to form a reversible circuit for the larger input design.
 
 * [M. Soeken and A. Chattopadhyay: Unlocking efficiency and scalability of reversible logic synthesis using conventional logic synthesis, in: *DAC* **53**, 2016.](http://msoeken.github.io/papers/2016_dac_2.pdf)
 
@@ -397,6 +401,7 @@ Building block synthesis relies on existing realizations of frequently used func
 * [D.M. Miller, D. Maslov, and G.W. Dueck: A transformation based algorithm for reversible logic synthesis, in: *DAC* **40**, 2003, 318-323.](http://dl.acm.org/citation.cfm?doid=775832.775915)
 * [A.K. Prasad, V.V. Shende, K.N. Patel, I.L. Markov, and J.P. Hayes: Data structures and algorithms for simplifying reversible circuits, in: *ACM JTEC* **2**, 2006, 277-293.](http://dl.acm.org/citation.cfm?id=1216399)
 * [Z. Li, H. Chen, X. Song, and M. Perkowski: A synthesis algorithm for 4-bit reversible logic circuits with minimum quantum cost, in: *JETC* **11**, 2014, 29:1-29:19.]()
+* [M. Rawski: Application of functional decomposition in synthesis of reversible circuits, in: *RC* **7**, 2015.](http://dx.doi.org/10.1007/978-3-319-20860-2_20)
 * [A.C. Ribeiro, L.A.B. Kowada, F.L. Marquezino, and C.M.H. Figueiredo: A new reversible circuit synthesis algorithm based on cycle representations of permutations, in: *Electronic Notes in Discrete Mathematics* **50**, 2015, 187-192.](http://dx.doi.org/10.1016/j.endm.2015.07.032)
 * [M. Saeedi, M. Saheb Zamani, M. Sedighi, and Z. Sasanian: Synthesis of reversible circuit using cycle-based approach, in: *J. Emerg. Technol. Comput. Syst.* **6**, 2010, 13:1–13:26.](http://dx.doi.org/10.1145/1877745.1877747)
 * [V.V. Shende, A.K. Prasad, I.L. Markov, and J.P. Hayes: Synthesis of reversible logic circuits, in: *IEEE Trans. Comput. Aid. Des.* **22**, 2003, 710–722.](http://dx.doi.org/10.1109/TCAD.2003.811448)
