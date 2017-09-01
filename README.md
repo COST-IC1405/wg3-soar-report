@@ -327,11 +327,11 @@ An ESOP expression of a function *f* is an exclusive sum of products.  Given an 
 #### Hierarchical synthesis
 In hierarchical synthesis the function is represented in a structural way, e.g., using a logic network. Then, small subparts of the structure are considered functionally, embedded into reversible functions and synthesized using functional algorithms.  The resulting reversible circuits are combined with respect to the structural representation of the function.  This combination of subcircuits leads to an additional number of lines, which are essentially required to store intermediate computation steps.
 
-**Input representation:** BDD, AIG
+**Input representation:** BDD, AIG, XMG
 
 **Gate libraries:** imposed by the underlying functional synthesis algorithm
 
-**Implementations:** [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/bdd_synthesis.cpp) (command: `hdbs`), [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/cut_based_synthesis.cpp) (command: `cbs`)
+**Implementations:** [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/bdd_synthesis.cpp) (command: `hdbs`), [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/cut_based_synthesis.cpp) (command: `cbs`), [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/lut_based_synthesis.cpp) (command: `lhrs`), [RevKit](https://github.com/msoeken/cirkit/blob/master/addons/cirkit-addon-reversible/src/reversible/synthesis/direct_xmg_synthesis.cpp) (command: `dxs`)
 
 **References:**
 * [R. Wille and R. Drechsler: BDD-based synthesis of reversible logic for large functions, in: *DAC* **46**, 2009, 270-275.](http://doi.acm.org/10.1145/1629911.1629984)
@@ -361,6 +361,10 @@ In hierarchical synthesis the function is represented in a structural way, e.g.,
 * [M. Soeken and A. Chattopadhyay: Unlocking efficiency and scalability of reversible logic synthesis using conventional logic synthesis, in: *DAC* **53**, 2016.](http://msoeken.github.io/papers/2016_dac_2.pdf)
 
   This paper applies hierarchical synthesis to a higher level compared to decision diagrams.  The irreversible input function is represented as an And-inverter graph (AIG).  Subgraphs in the AIG are determined, which are then optimally embeded and synthesized using symbolic functional heuristic algorithms.
+  
+* [M. Soeken, M. Roetteler, N. Wiebe, and G. De Micheli: Design automation and design space exploration for quantum computers, in: *DATE*, 2017, 470--475.](https://msoeken.github.io/papers/2017_date_3.pdf)
+
+  Three design flows to synthesize reversible logic networks from Verilog design specifications are presented.  It shows how classical logic synthesis helps to prepare the data structures that are input to reversible logic synthesis algorithms from different categories. For hierarchical synthesis a new approach based on XOR-Majority Graphs (XMG) is presented.
 
 #### Building block synthesis
 Building block synthesis relies on existing realizations of frequently used functions/operations as well as a higher level description of the functionality to be synthesized, e.g., in terms of hardware description languages (HDLs). It represents a complementary approach to the synthesis approaches reviewed above: The function to be synthesized is described in HDL terms, while existing building blocks are employed to create the corresponding netlists. Main challenges remain the composition of the respectively described data and control flow.
@@ -408,6 +412,7 @@ Building block synthesis relies on existing realizations of frequently used func
 * [M. Soeken and A. Chattopadhyay: Fredkin-enabled transformation-based reversible logic synthesis, in: *ISMVL* **46**, 2015, 60-65.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7238133)
 * [M. Soeken and A. Chattopadhyay: Unlocking efficiency and scalability of reversible logic synthesis using conventional logic synthesis, in: *DAC* **53**, 2016.](http://msoeken.github.io/papers/2016_dac_2.pdf)
 * [M. Soeken, G.W. Dueck, and D.M. Miller: A fast symbolic transformation based algorithm for reversible logic synthesis, in: *RC* **8**, 2016.](http://msoeken.github.io/papers/2016_rc_1.pdf)
+* [M. Soeken, M. Roetteler, N. Wiebe, and G. De Micheli: Design automation and design space exploration for quantum computers, in: *DATE*, 2017, 470--475.](https://msoeken.github.io/papers/2017_date_3.pdf)
 * [M. Soeken, L. Tague, G.W. Dueck, and R. Drechsler: Ancilla-free synthesis of large reversible functions using binary decision diagrams, in: *J. Symb. Comput.* **73**, 2016, 1-26.](http://dx.doi.org/10.1016/j.jsc.2015.03.002)
 * [M. Soeken, R. Wille, and R. Drechsler: Hierarchical synthesis of reversible circuits using positive and negative Davio decomposition, in: *IDT* **5**, 2010, 143-148.](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5724427)
 * [M. Soeken, R. Wille, C. Hilken, N. Przigoda, and R. Drechsler: Synthesis of reversible circuits with minimal lines for large functions, in: *ASP-DAC* **17**, 2012, 85-92.](http://dx.doi.org/10.1109/ASPDAC.2012.6165069)
