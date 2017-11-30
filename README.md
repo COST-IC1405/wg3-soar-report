@@ -323,6 +323,17 @@ An ESOP expression of a function *f* is an exclusive sum of products.  Given an 
 - [R. Drechsler, A. Finder, and R. Wille: Improving ESOP-based synthesis of reversible logic using evolutionary algorithms, in: *EvoApplications*, 2011, 151-161.](http://dx.doi.org/10.1109/ETS.2011.34)
 
   This paper shows how evolutionary algorithms may be used to obtain reversivle circuits based on structural techniques used for irreversible design.
+  
+- [A. Mishchenko and M. Perkowski: Logic synthesis for reversible wave cascades, in: *IWLS*, 2002.](http://pdxscholar.library.pdx.edu/ece_fac/215/)
+
+- [D. Maslov and G.W. Dueck: Reversible cascades with minimal garbage, in: *TCAD* **23**, 2004, 1497-1509.](https://doi.org/10.1109/TCAD.2004.836735)
+
+- [C. Bandyopadhyay, H. Rahaman, and R. Drechsler: A cube pairing approach for synthesis of ESOP-based reversible circuit, in: *ISMVL* **44**, 2014, 109-114.](https://doi.org/10.1109/ISMVL.2014.27)
+
+- [G. Meuli, M. Soeken, M. Roetteler, N. Wiebe, and G. De Micheli: A best-fit mapping algorithm to facilitate ESOP-decomposition in Clifford+*T* quantum network synthesis, in: *ASP-DAC* **23**, 2018.]()
+
+- [J. Jegier and P. Kerntopf: Application of the maximum weighted matching to quantum cost reduction in reversible circuits, in: *MIXDES* **24**, 2017, 224-228.](https://doi.org/10.23919/MIXDES.2017.8005188)
+
 
 #### Hierarchical synthesis
 In hierarchical synthesis the function is represented in a structural way, e.g., using a logic network. Then, small subparts of the structure are considered functionally, embedded into reversible functions and synthesized using functional algorithms.  The resulting reversible circuits are combined with respect to the structural representation of the function.  This combination of subcircuits leads to an additional number of lines, which are essentially required to store intermediate computation steps.
@@ -387,6 +398,7 @@ Building block synthesis relies on existing realizations of frequently used func
   This paper presents the findings proposed before in a more comprehensive fashion, including a grammar of the proposed SyReC language as well as detailed description of the synthesis for the data and control flow.
 
 ## References
+* [C. Bandyopadhyay, H. Rahaman, and R. Drechsler: A cube pairing approach for synthesis of ESOP-based reversible circuit, in: *ISMVL* **44**, 2014, 109-114.](https://doi.org/10.1109/ISMVL.2014.27)
 * [A. Chattopadhyay, A. Littarru, L.G. Amarù, P.-E. Gaillardon, and G. De Micheli: Reversible logic synthesis via biconditional binary decision diagrams, in: *ISMVL* **45**, 2015, 2-7.](http://dx.doi.org/10.1109/ISMVL.2015.21)
 * [A. De Vos and Y. Van Rentergem: Young subgroups for reversible computers, in: *Adv. in Math. of Comm.* **2**, 2008, 183-200.](http://dx.doi.org/10.3934/amc.2008.2.183)
 * [O. Golubitsky, S.M. Falconer, and D. Maslov: Synthesis of the optimal 4-bit reversible circuits, in DAC 47, 2010, 653-656.]()
@@ -397,12 +409,16 @@ Building block synthesis relies on existing realizations of frequently used func
 * [J. Jegier and P. Kerntopf: Progress towards constructing sequences of benchmarks for quantum Boolean circuits synthesis, in: *IEEE-NANO* **14**, 2014, 250-255.]()
 * [J. Jegier and P. Kerntopf: Gate count minimal reversible circuits for two infinite sequences of self-inverse functions, in: *IWBP* **11**, 2014, 115-122.]()
 * [J. Jegier and P. Kerntopf: Gate count minimal reversible circuits, in: *Problems and New Solutions in the Boolean Domain*, Bernd Steinbach (ed.), Cambridge Scholars Publishing, 2016, 342-355.]()
+* [J. Jegier and P. Kerntopf: Application of the maximum weighted matching to quantum cost reduction in reversible circuits, in: *MIXDES* **24**, 2017, 224-228.](https://doi.org/10.23919/MIXDES.2017.8005188)
 * [P. Kerntopf: A new heuristic algorithm for reversible logic synthesis, in: *DAC* **41**, 2004, 834-837.](http://dl.acm.org/citation.cfm?id=996789)
 * [M. Krishna and A. Chattopadhyay: Efficient reversible logic synthesis via isomorphic subgraph matching, in: *ISMVL* **44**, 2014, 103-108.](http://dx.doi.org/10.1109/ISMVL.2014.26)
 * [P. Manna, D.K. Kole, H. Rahaman, D.K. Das, and B.B. Bhattacharya: Reversible logic circuit synthesis using genetic algorithm and particle swarm optimization, in: *ISED* **3**, 2012, 246-250.](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6526593&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6526593)
+* [D. Maslov and G.W. Dueck: Reversible cascades with minimal garbage, in: *TCAD* **23**, 2004, 1497-1509.](https://doi.org/10.1109/TCAD.2004.836735)
 * [D. Maslov, G.W. Dueck, and D.M. Miller: Toffoli network synthesis with templates, in: *IEEE Trans. on CAD of Integrated Circuits and Systems* **24**, 2005, 807-817.](http://dx.doi.org/10.1109/TCAD.2005.847911)
 * [D. Maslov, G.W. Dueck, and D.M. Miller: Synthesis of Fredkin-Toffoli reversible networks, in: *IEEE Trans. VLSI Syst.* **13**, 2005, 765-769.](http://dx.doi.org/10.1109/TVLSI.2005.844284)
+* [G. Meuli, M. Soeken, M. Roetteler, N. Wiebe, and G. De Micheli: A best-fit mapping algorithm to facilitate ESOP-decomposition in Clifford+*T* quantum network synthesis, in: *ASP-DAC* **23**, 2018.]()
 * [D.M. Miller, D. Maslov, and G.W. Dueck: A transformation based algorithm for reversible logic synthesis, in: *DAC* **40**, 2003, 318-323.](http://dl.acm.org/citation.cfm?doid=775832.775915)
+* [A. Mishchenko and M. Perkowski: Logic synthesis for reversible wave cascades, in: *IWLS*, 2002.](http://pdxscholar.library.pdx.edu/ece_fac/215/)
 * [A.K. Prasad, V.V. Shende, K.N. Patel, I.L. Markov, and J.P. Hayes: Data structures and algorithms for simplifying reversible circuits, in: *ACM JTEC* **2**, 2006, 277-293.](http://dl.acm.org/citation.cfm?id=1216399)
 * [Z. Li, H. Chen, X. Song, and M. Perkowski: A synthesis algorithm for 4-bit reversible logic circuits with minimum quantum cost, in: *JETC* **11**, 2014, 29:1-29:19.]()
 * [M. Rawski: Application of functional decomposition in synthesis of reversible circuits, in: *RC* **7**, 2015.](http://dx.doi.org/10.1007/978-3-319-20860-2_20)
